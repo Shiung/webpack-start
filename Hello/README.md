@@ -22,3 +22,7 @@
 2. with cross-env
 
 - 使用 webpack.config.js 裡的mode 來替換script 裡--mode 行為
+
+
+# webpack 入門 commit 章節4 watch
+- sciprt add --watch for webpack

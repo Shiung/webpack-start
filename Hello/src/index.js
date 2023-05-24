@@ -6,3 +6,5 @@ let fun2 = (p) => console.log('func2', p)
 export const func3 = (callback) => {
   fun1 = callback
 }
+
+const aa = '123abc'
