@@ -13,6 +13,10 @@
   "license": "ISC",
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "css-loader": "^6.7.4",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.4.23",
+    "style-loader": "^3.3.3",
     "webpack": "^5.83.1",
     "webpack-cli": "^5.1.1"
   }

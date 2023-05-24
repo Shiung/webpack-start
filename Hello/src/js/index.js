@@ -1,3 +1,5 @@
+import '../css/index.css'
+
 console.log('hello world 123')
 
 let fun1 = (p) => console.log('func1', p)

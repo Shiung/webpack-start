@@ -32,3 +32,9 @@
 - entry & output 設定
 1. entry 物件來指定多個進入點
 2. output [name] 會依照entry 的name 來更改output
+
+# webpack 入門 commit 章節6 css loader
+- install css-loader --save-dev   style-loader --save-dev
+- setting in webpack.comfig.js https://webpack.js.org/loaders/css-loader/
+- npm install --save-dev mini-css-extract-plugin https://github.com/webpack-contrib/mini-css-extract-plugin
+- npm i postcss -D https://github.com/postcss/postcss#usage & add postcss.config.js
