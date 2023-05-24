@@ -25,7 +25,7 @@ module.exports = {
     // 1. 指定單擋名稱
     // filename: 'index-bundle.js'
     // 2. [name] 會依照entry object的key name 來更改output
-    filename: '[name]-bundle.js'
+    filename: './js/[name].js' //'[name]-bundle.js' 
   },
   module: {
     rules: [
@@ -35,8 +35,23 @@ module.exports = {
         // // loader 執行順序會從後到錢 ex: 先執行css-loader 在執行style-loader
         // use: ["style-loader", "css-loader"],
         use: [MiniCssExtractPlugin.loader, "css-loader"]
-      }
+      },
+        // 2. file-loader
+        {
+          test: /\.html$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[path][name].[ext]'
+                //      陸贈   檔名    副檔名
+              }
+            }
+          ]
+        },
     ],
   },
-  plugins: [new MiniCssExtractPlugin()]
+  plugins: [new MiniCssExtractPlugin({
+    filename: './css/[name].css'
+  })]
 }

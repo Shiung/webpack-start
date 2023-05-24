@@ -38,3 +38,7 @@
 - setting in webpack.comfig.js https://webpack.js.org/loaders/css-loader/
 - npm install --save-dev mini-css-extract-plugin https://github.com/webpack-contrib/mini-css-extract-plugin
 - npm i postcss -D https://github.com/postcss/postcss#usage & add postcss.config.js
+
+# webpack 入門 commit 章節7 file-loader
+- npm i file-loader -D https://v4.webpack.js.org/loaders/file-loader/
+- npm i html-loader -D 

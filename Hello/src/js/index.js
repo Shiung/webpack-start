@@ -1,4 +1,5 @@
 import '../css/index.css'
+import '../index.html'
 
 console.log('hello world 123')
 
