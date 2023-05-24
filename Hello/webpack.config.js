@@ -12,10 +12,18 @@ module.exports = {
   // context 指定webpack 路徑的資料是哪個
   context: path.resolve(__dirname, './src'),
 
-  entry: './index.js',
+  // entry: './index.js',
+  entry: {
+    index: './index.js',
+    about: './about.js'
+  },
   output: {
     // 路徑
     path: path.resolve(__dirname, './dist'),
-    filename: 'index-bundle.js'
+
+    // 1. 指定單擋名稱
+    // filename: 'index-bundle.js'
+    // 2. [name] 會依照entry object的key name 來更改output
+    filename: '[name]-bundle.js'
   }
 }

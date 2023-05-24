@@ -26,3 +26,9 @@
 
 # webpack 入門 commit 章節4 watch
 - sciprt add --watch for webpack
+
+
+# webpack 入門 commit 章節5 filename
+- entry & output 設定
+1. entry 物件來指定多個進入點
+2. output [name] 會依照entry 的name 來更改output
