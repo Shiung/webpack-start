@@ -25,7 +25,8 @@ module.exports = {
     // 1. 指定單擋名稱
     // filename: 'index-bundle.js'
     // 2. [name] 會依照entry object的key name 來更改output
-    filename: './js/[name].js' //'[name]-bundle.js' 
+    filename: './js/[name].js' //'[name]-bundle.js'
+    // ./js 代表轉譯後output 到dist 裏多了 js路徑
   },
   module: {
     rules: [
@@ -53,5 +54,6 @@ module.exports = {
   },
   plugins: [new MiniCssExtractPlugin({
     filename: './css/[name].css'
+    // option 設定css output的filename  ./css 代表轉譯後output 到dist 裏多了 css路徑
   })]
 }
