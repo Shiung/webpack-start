@@ -42,3 +42,7 @@
 # webpack 入門 commit 章節7 file-loader
 - npm i file-loader -D https://v4.webpack.js.org/loaders/file-loader/
 - npm i html-loader -D 
+
+
+# webpack 入門 commit 章節8 sass-loader
+- npm install sass-loader sass --save-dev  https://webpack.js.org/loaders/sass-loader/#root

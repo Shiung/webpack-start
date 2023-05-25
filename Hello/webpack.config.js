@@ -37,19 +37,37 @@ module.exports = {
         // use: ["style-loader", "css-loader"],
         use: [MiniCssExtractPlugin.loader, "css-loader"]
       },
-        // 2. file-loader
-        {
-          test: /\.html$/,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[path][name].[ext]'
-                //      陸贈   檔名    副檔名
-              }
+      // 2. file-loader
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]'
+              //      陸贈   檔名    副檔名
             }
-          ]
-        },
+          }
+        ]
+      },
+      // 3. sass
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          {
+            loader: "sass-loader",
+            options: {
+              // Prefer `dart-sass`
+              implementation: require.resolve("sass"),
+            },
+          },
+        ],
+      }
     ],
   },
   plugins: [new MiniCssExtractPlugin({
