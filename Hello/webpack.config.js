@@ -73,6 +73,11 @@ module.exports = {
             },
           },
         ],
+      },
+      // babel loader 
+      {
+        test: /\.js$/i,
+        use: 'babel-loader'
       }
     ],
   },

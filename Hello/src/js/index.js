@@ -12,3 +12,10 @@ export const func3 = (callback) => {
 }
 
 const aa = '123abc'
+
+
+/// babel test es6 語法
+let arr = [1, 2, 3]
+arr.map((i) => {
+  console.log('i', i)
+})

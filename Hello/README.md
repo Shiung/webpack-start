@@ -49,3 +49,9 @@
 
 # webpack 入門 commit 章節9 webpack-dev-server
 - npm i webpack-dev-server -D 啟動dev sevrer  https://webpack.js.org/configuration/dev-server/  https://webpack.js.org/api/stats/
+
+# webpack 入門 commit 章節10 babel
+1. npm i babel-loader @babel/core @babel/preset-env -D  https://babeljs.io/
+  - @babel/core : 程式需要調用babel 的API進行編譯
+  - @babel/preset-env : 可以使用最新版本的Javascript然後去編譯,不用理會哪些五發需要轉換
+2. 新增babel 設定檔 .babelrc or babel.config.json 看官網
