@@ -28,6 +28,12 @@ module.exports = {
     filename: './js/[name].js' //'[name]-bundle.js'
     // ./js 代表轉譯後output 到dist 裏多了 js路徑
   },
+   // dev server
+  devServer: {
+    compress: true,
+    port: 5678,
+    // stats: {}
+  },
   module: {
     rules: [
       // 1. add css loader

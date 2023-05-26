@@ -46,3 +46,6 @@
 
 # webpack 入門 commit 章節8 sass-loader
 - npm install sass-loader sass --save-dev  https://webpack.js.org/loaders/sass-loader/#root
+
+# webpack 入門 commit 章節9 webpack-dev-server
+- npm i webpack-dev-server -D 啟動dev sevrer  https://webpack.js.org/configuration/dev-server/  https://webpack.js.org/api/stats/
