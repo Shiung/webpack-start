@@ -55,3 +55,8 @@
   - @babel/core : 程式需要調用babel 的API進行編譯
   - @babel/preset-env : 可以使用最新版本的Javascript然後去編譯,不用理會哪些五發需要轉換
 2. 新增babel 設定檔 .babelrc or babel.config.json 看官網
+
+# webpack 入門 commit 章節11 import vs require 模組
+- import 是在 es6 後出來的 / require follow commonJs
+- 1. export -> import 
+- 2. module.exports -> require
