@@ -60,3 +60,5 @@
 - import 是在 es6 後出來的 / require follow commonJs
 - 1. export -> import 
 - 2. module.exports -> require
+
+# webpack 入門 commit 章節12 webpack resolve
