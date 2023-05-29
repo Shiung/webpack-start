@@ -25,8 +25,15 @@ module.exports = {
     // 1. 指定單擋名稱
     // filename: 'index-bundle.js'
     // 2. [name] 會依照entry object的key name 來更改output
-    filename: './js/[name].js' //'[name]-bundle.js'
+    filename: './js/[name].js', //'[name]-bundle.js'
     // ./js 代表轉譯後output 到dist 裏多了 js路徑
+
+    assetModuleFilename: 'images/[hash][ext][query]'
+  },
+  resolve: {
+    alias: {
+      imgSrc: path.resolve(__dirname, 'src/img/')
+    }
   },
    // dev server
   devServer: {
@@ -78,7 +85,22 @@ module.exports = {
       {
         test: /\.js$/i,
         use: 'babel-loader'
-      }
+      },
+
+      // // url-loader
+      // {
+      //   test: /\.(png|jpg|gif)$/i,
+      //   use: [
+      //     {
+      //       loader: 'url-loader',
+      //       // options: {
+      //       //   limit: true,
+      //       //   // name: '[path][name].[ext]?[hash:8]'
+      //       // },
+      //     },
+      //   ],
+      //   type: 'asset/resource'
+      // },
     ],
   },
   plugins: [new MiniCssExtractPlugin({

@@ -62,3 +62,7 @@
 - 2. module.exports -> require
 
 # webpack 入門 commit 章節12 webpack resolve
+
+
+# webpack 入門 commit 章節13 url-loader
+- 將過小的圖片轉換為 base64 格式來使用
